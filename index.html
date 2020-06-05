@@ -95,12 +95,11 @@
         <div class="campaigns__buttons">
           <button class="section__button">create new</button>
           <label class="campaigns__button__value">
-            <!-- 👇🏼 These value fields should be lowercase -->
             <input
               type="radio"
               class="campaigns__button__radio"
               name="button"
-              value="List"
+              value="list"
             />List</label
           >
           <label class="campaigns__button__value"
@@ -108,7 +107,7 @@
               type="radio"
               class="campaigns__button__radio"
               name="button"
-              value="Timeline"
+              value="timeline"
             />Timeline</label
           >
         </div>
@@ -142,8 +141,6 @@
             <tr class="table__row">
               <td class="table__cell">Campaign 27</td>
               <td class="table__cell">
-                <!-- Try to do it with pseudoelements, aka table__cell-text::before -->
-                <span class="table__cell-status-icon"></span>
                 <span class="table__cell-text">Prediction</span>
               </td>
               <td class="table__cell">Raise awarness</td>
@@ -153,7 +150,6 @@
             <tr>
               <td class="table__cell">Campaign 3</td>
               <td class="table__cell">
-                <span class="table__cell-status-icon"></span>
                 <span class="table__cell-text">Prediction</span>
               </td>
               <td class="table__cell">Gain new subscribers</td>
@@ -163,7 +159,6 @@
             <tr>
               <td class="table__cell">Campaign 9</td>
               <td class="table__cell">
-                <span class="table__cell-status-icon"></span>
                 <span class="table__cell-text">Prediction</span>
               </td>
               <td class="table__cell">Gain new subscribers</td>
@@ -173,7 +168,6 @@
             <tr>
               <td class="table__cell">Campaign 22</td>
               <td class="table__cell">
-                <span class="table__cell-status-icon"></span>
                 <span class="table__cell-text">Running</span>
               </td>
               <td class="table__cell">Raise awarness</td>
@@ -183,7 +177,6 @@
             <tr>
               <td class="table__cell">Campaign 4</td>
               <td class="table__cell">
-                <span class="table__cell-status-icon"></span>
                 <span class="table__cell-text">Running</span>
               </td>
               <td class="table__cell">Raise sales</td>
@@ -193,7 +186,6 @@
             <tr>
               <td class="table__cell">Campaign 2</td>
               <td class="table__cell">
-                <span class="table__cell-status-icon"></span>
                 <span class="table__cell-text">Finished</span>
               </td>
               <td class="table__cell">Raise awarness</td>
@@ -206,7 +198,6 @@
 
       <!--Section 3-->
       <section id="creative-materials" class="section">
-        <!-- Maybe you forgot to rename section with creative-materials? -->
         <h1 class="section__heading">Creative materials</h1>
 
         <button class="section__button">upload new</button>
@@ -235,8 +226,7 @@
                 />TV</label
               >
             </li>
-            <!-- ifilter? -->
-            <li class="creative-materials-ifilter__list-item">
+            <li class="creative-materials-filter__list-item">
               <label class="creative-materials-filter__value"
                 ><input
                   type="checkbox"
