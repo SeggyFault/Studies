@@ -108,22 +108,28 @@
           <button class="section__button">create new</button>
 
           <div class="campaigns__buttons-group flex">
-            <label class="campaigns__button__value unchecked">
+            <button class="campaigns__button-group round-corners--left">
               <input
                 type="radio"
                 class="campaigns__button__radio"
                 name="button"
                 value="list"
-              />List</label
-            >
-            <label class="campaigns__button__value checked"
-              ><input
+              />
+              <label class="campaigns__button__value round-corners--left"
+                >List</label
+              >
+            </button>
+            <button class="campaigns__button-group">
+              <input
                 type="radio"
                 class="campaigns__button__radio"
                 name="button"
-                value="timeline"
-              />Timeline</label
-            >
+                value="list"
+              />
+              <label class="campaigns__button__value round-corners--right"
+                >Timeline</label
+              >
+            </button>
           </div>
         </div>
 
@@ -154,57 +160,59 @@
           </thead>
           <tbody class="table__body">
             <tr class="table__row">
-              <td class="table__cell">Campaign 27</td>
-              <td class="table__cell">
+              <td class="table__cell border-right">Campaign 27</td>
+              <td class="table__cell border-right">
                 <span class="table__cell-text">Prediction</span>
               </td>
-              <td class="table__cell">Raise awarness</td>
-              <td class="table__cell">Brand: BW7</td>
+              <td class="table__cell border-right">Raise awarness</td>
+              <td class="table__cell border-right">Brand: BW7</td>
               <td class="table__cell">01/06/16-31/08/16</td>
             </tr>
-            <tr>
-              <td class="table__cell">Campaign 3</td>
-              <td class="table__cell">
+            <tr class="table__row even">
+              <td class="table__cell border-right">Campaign 3</td>
+              <td class="table__cell border-right">
                 <span class="table__cell-text">Prediction</span>
               </td>
-              <td class="table__cell">Gain new subscribers</td>
-              <td class="table__cell">Product: Newsletter</td>
+              <td class="table__cell border-right">Gain new subscribers</td>
+              <td class="table__cell border-right">Product: Newsletter</td>
               <td class="table__cell">01/02/16-30/02/16</td>
             </tr>
-            <tr>
-              <td class="table__cell">Campaign 9</td>
-              <td class="table__cell">
+            <tr class="table__row">
+              <td class="table__cell border-right">Campaign 9</td>
+              <td class="table__cell border-right">
                 <span class="table__cell-text">Prediction</span>
               </td>
-              <td class="table__cell">Gain new subscribers</td>
-              <td class="table__cell">Product: Newsletter</td>
+              <td class="table__cell border-right">Gain new subscribers</td>
+              <td class="table__cell border-right">Product: Newsletter</td>
               <td class="table__cell">15/01/16-31/03/16</td>
             </tr>
-            <tr>
-              <td class="table__cell">Campaign 22</td>
-              <td class="table__cell">
+            <tr class="table__row even">
+              <td class="table__cell border-right">Campaign 22</td>
+              <td class="table__cell border-right">
                 <span class="table__cell-text">Running</span>
               </td>
-              <td class="table__cell">Raise awarness</td>
-              <td class="table__cell">Brand: BW7; Product: RTPM</td>
+              <td class="table__cell border-right">Raise awarness</td>
+              <td class="table__cell border-right">
+                Brand: BW7; Product: RTPM
+              </td>
               <td class="table__cell">01/01/16-31/01/16</td>
             </tr>
-            <tr>
-              <td class="table__cell">Campaign 4</td>
-              <td class="table__cell">
+            <tr class="table__row">
+              <td class="table__cell border-right">Campaign 4</td>
+              <td class="table__cell border-right">
                 <span class="table__cell-text">Running</span>
               </td>
-              <td class="table__cell">Raise sales</td>
-              <td class="table__cell">Product: RTPM</td>
+              <td class="table__cell border-right">Raise sales</td>
+              <td class="table__cell border-right">Product: RTPM</td>
               <td class="table__cell">15/12/16-15/01/16</td>
             </tr>
-            <tr>
-              <td class="table__cell">Campaign 2</td>
-              <td class="table__cell">
+            <tr class="table__row even">
+              <td class="table__cell border-right">Campaign 2</td>
+              <td class="table__cell border-right">
                 <span class="table__cell-text">Finished</span>
               </td>
-              <td class="table__cell">Raise awarness</td>
-              <td class="table__cell">Product: RTPM</td>
+              <td class="table__cell border-right">Raise awarness</td>
+              <td class="table__cell border-right">Product: RTPM</td>
               <td class="table__cell">01/12/16-31/12/16</td>
             </tr>
           </tbody>
@@ -219,16 +227,13 @@
 
         <div class="creative-materials-filter">
           <ul class="creative-materials-filter__list flex">
-            <li class="creative-materials-filter__list-item">
+            <li class="creative-materials-filter__list-item separator">
               <label class="creative-materials-filter__label"
                 ><input
                   type="checkbox"
                   class="creative-materials-filter__checkbox"
                 />All</label
               >
-            </li>
-            <li class="creative-materials-filter__list-item">
-              <span class="creative-materials-filter__separator">|</span>
             </li>
             <li class="creative-materials-filter__list-item">
               <label class="creative-materials-filter__value"
@@ -290,48 +295,62 @@
         <div class="creative-materials-cards">
           <ul class="creative-materials-cards__list flex">
             <li class="creative-materials-card">
-              <div class="creative-materials-card__header">
-                <img
-                  src="img/the_truth.png"
-                  class="creative-materials-card__image object-fit_cover"
-                  alt="the truth article page"
-                />
-              </div>
-              <h2 class="creative-materials-card__title">The truth</h2>
-              <span class="creative-materials-card__tag">Print</span>
+              <a href="#" class="creative-materials-card__link">
+                <div class="creative-materials-card__header">
+                  <img
+                    src="img/the_truth.png"
+                    class="creative-materials-card__image object-fit_cover"
+                    alt="the truth article page"
+                  />
+                </div>
+                <h2 class="creative-materials-card__title">The truth</h2>
+                <span class="creative-materials-card__tag">Print</span>
+              </a>
             </li>
             <li class="creative-materials-card">
-              <div class="creative-materials-card__header">
-                <img
-                  src="img/summer_campaign_3.png"
-                  class="creative-materials-card__image object-fit_cover"
-                  alt="the summer campaign video"
-                />
-              </div>
-              <h2 class="creative-materials-card__title">Summer campaign 3</h2>
-              <span class="creative-materials-card__tag">Tv</span>
+              <a href="#" class="creative-materials-card__link">
+                <div class="creative-materials-card__header">
+                  <img
+                    src="img/summer_campaign_3.png"
+                    class="creative-materials-card__image object-fit_cover"
+                    alt="the summer campaign video"
+                  />
+                  <img
+                    class="icon__play centered"
+                    src="./img/play_circle_filled-24px.svg"
+                  />
+                </div>
+                <h2 class="creative-materials-card__title">
+                  Summer campaign 3
+                </h2>
+                <span class="creative-materials-card__tag">Tv</span>
+              </a>
             </li>
             <li class="creative-materials-card">
-              <div class="creative-materials-card__header">
-                <img
-                  src="img/job_fair_banner.png"
-                  class="creative-materials-card__image object-fit_cover"
-                  alt="the job fair banner"
-                />
-              </div>
-              <h2 class="creative-materials-card__title">Job fair banner</h2>
-              <span class="creative-materials-card__tag">Outdoor</span>
+              <a href="#" class="creative-materials-card__link">
+                <div class="creative-materials-card__header">
+                  <img
+                    src="img/job_fair_banner.png"
+                    class="creative-materials-card__image object-fit_cover"
+                    alt="the job fair banner"
+                  />
+                </div>
+                <h2 class="creative-materials-card__title">Job fair banner</h2>
+                <span class="creative-materials-card__tag">Outdoor</span>
+              </a>
             </li>
             <li class="creative-materials-card">
-              <div class="creative-materials-card__header">
-                <img
-                  src="img/offer_free_trial.png"
-                  class="creative-materials-card__image object-fit_contain"
-                  alt="iMac monitor with the free trial offer"
-                />
-              </div>
-              <h2 class="creative-materials-card__title">Offer free trial</h2>
-              <span class="creative-materials-card__tag">Online</span>
+              <a href="#" class="creative-materials-card__link">
+                <div class="creative-materials-card__header">
+                  <img
+                    src="img/offer_free_trial.png"
+                    class="creative-materials-card__image object-fit_contain"
+                    alt="iMac monitor with the free trial offer"
+                  />
+                </div>
+                <h2 class="creative-materials-card__title">Offer free trial</h2>
+                <span class="creative-materials-card__tag">Online</span>
+              </a>
             </li>
           </ul>
         </div>
